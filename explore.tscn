@@ -1,0 +1,173 @@
+[gd_scene load_steps=8 format=3 uid="uid://p30ecsqsuqfi"]
+
+[ext_resource type="Script" uid="uid://dfwamjyi11yx0" path="res://assets/scripts/explore.gd" id="1_dsqco"]
+[ext_resource type="Texture2D" uid="uid://dgsnefuhdhvna" path="res://assets/map.png" id="1_se1is"]
+[ext_resource type="AudioStream" uid="uid://47bcdqmmh0yx" path="res://assets/music/time_for_adventure.mp3" id="2_rpntm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hci6w"]
+bg_color = Color(0, 0, 0, 0.815686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yvajj"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6kcn"]
+bg_color = Color(0, 0, 0, 0.815686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsqco"]
+bg_color = Color(0, 0, 0, 0.815686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Explore" type="Node2D"]
+texture_filter = 2
+script = ExtResource("1_dsqco")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Map" type="TextureRect" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2154.0
+offset_top = -510.0
+offset_right = 3864.0
+offset_bottom = 2875.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_se1is")
+
+[node name="Back" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 177.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hci6w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvajj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i6kcn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsqco")
+text = "Back to Game"
+
+[node name="51" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -194.0
+offset_top = -186.0
+offset_right = 87.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hci6w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvajj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i6kcn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsqco")
+text = "Mount Miniscule Summit"
+
+[node name="72" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 147.0
+offset_top = 165.0
+offset_right = 329.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hci6w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvajj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i6kcn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsqco")
+text = "The River Glub"
+
+[node name="75" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -479.0
+offset_top = 113.0
+offset_right = -297.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hci6w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvajj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i6kcn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsqco")
+text = "Flavor Town"
+
+[node name="80" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 152.0
+offset_top = -55.0
+offset_right = 537.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hci6w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvajj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i6kcn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsqco")
+text = "The Parting of the Mountain Waters"
+
+[node name="Background Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_rpntm")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="CanvasLayer/Control/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/51" to="." method="_on_51_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/72" to="." method="_on_72_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/75" to="." method="_on_75_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/80" to="." method="_on_80_pressed"]
